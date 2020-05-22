@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>test</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <nav class="nav">
+    <a class="nav__item" href="#email">Join with email</a>
+    <a class="nav__item" href="#phone">Join with phone</a>
+  </nav>
+</header>
+<form id="form" action="#" autocomplete="on" class="form--register">
+  <fieldset class="fieldset">
+    <div class="form__group">
+      <label class="form__label--data">Email</label>
+      <input type="text" name="Mobile" id="phone" pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number"
+             placeholder="123456789"
+             class="form__input--phone" required/>
+      <input class="form__input--email" id="email" type="email" name="Email" placeholder="johndoe@example.com"
+             required/>
+    </div>
+    <hr class="form__divider">
+    <div class="form__group">
+      <label class="form__label--inline">
+        <input type="radio" id="usd" name="currency" value="usd" class="form__input--radio" required/>
+        <span>$ USD</span>
+      </label>
+      <label class="form__label--inline">
+        <input type="radio" id="eur" name="currency" value="eur" class="form__input--radio" required/>
+        <span>€ EUR</span>
+      </label>
+    </div>
+    <hr class="form__divider">
+    <div class="form__group">
+      <label class="form__label--inline form__label--checkbox">
+        <input type="checkbox" id="terms" name="terms" class="form__input--checkbox" required/>
+        By checking here and continuing, I agree to the <a href="#" class="form__link">Terms of Use</a>.
+      </label>
+      <label class="form__label--inline form__label--checkbox">
+        <input type="checkbox" id="promo" name="promo" value="usd" class="form__input--checkbox"/>
+        Opt in for the latest promotions and events. You may unsubscribe at any time.
+      </label>
+    </div>
+  </fieldset>
+  <div>
+    <button id="submit" type="submit" class="form__button">
+      <span>Sign Up</span>
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" width="24" height="24" viewBox="0 0 38 38"
+           stroke="#fff">
+        <g fill="none" fill-rule="evenodd">
+          <g transform="translate(1 1)" stroke-width="2">
+            <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+            <path d="M36 18c0-9.94-8.06-18-18-18" transform="rotate(275.273 18 18)">
+              <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s"
+                                repeatCount="indefinite"/>
+            </path>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+  <div style="display: none;">
+    <button id="submit" type="submit" class="form__login">
+      Log In to your Account
+    </button>
+  </div>
+</form>
+<script src="js/main.js"></script>
+</body>
+</html>
